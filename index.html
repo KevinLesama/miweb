@@ -4,9 +4,391 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Bs-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <p>hola v1</p>
-    <p>hola</p>
+    <div class="container">
+
+        <div class="row">
+    
+          <div class="col"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nemo eligendi aut adipisci corrupti amet, inventore sint aspernatur architecto nam accusantium ipsa? Quis? </div>
+    
+          <div class="col"> Column </div>
+    
+          <div class="col"> Column </div>
+    
+        </div>
+      </div>
+    <div class="waifu   ">
+      <img src="img/muku.jpg" class="img-fluid" alt=""> <!--lo que hace img-fluid es que hace la img resposive a su conteiner-->
+      <!-- 
+        Ejemplo: Imágenes en miniaturas (200 x 200) con un borde de 1px=class= "img-thumbnail"
+        Ejemplo: Alinear imágenes (1 al inicio de la fila y 2 al final de la fila)=class ="rounded float-start" y class= "rounded float-end"
+
+
+
+
+
+      -->
+    </div>
+    <table class="table"> <!-- el thead es la cabeza y se yace con tr que hace la linea horizontal y cada th es un item
+    tbody es el cuerpo y cada tr es el horizontal y su scope row es su inidice de la 1er parte y la pone en negrita
+    -->
+
+        <thead>
+    
+          <tr class="table-primary">
+    
+            <th scope="col">Nro</th>
+    
+            <th scope="col">Nombre</th>
+    
+            <th scope="col">Apellido/th>
+    
+          </tr>
+    
+        </thead>
+    
+        <tbody>
+          <tr class="table-secondary">
+    
+            <th scope="row">1</th>
+    
+            <td>Maximiliano</td>
+    
+            <td>Guerra</td>
+    
+          </tr>
+          <tr class="table-success">
+            <th scope="row">2</th>
+    
+            <td>Erik</td>
+    
+            <td>Thomas</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- los table le dan colores a la tabla
+    <table class="table-primary">...</table>
+
+<table class="table-secondary">...</table>
+
+<table class="table-success">...</table>
+
+<table class="table-danger">...</table>
+
+<table class="table-warning">...</table>
+
+<table class="table-info">...</table>
+
+<table class="table-light">...</table>
+
+<table class="table-dark">...</table>
+
+ On rows 
+
+<tr class="table-primary">...</tr>
+
+<tr class="table-secondary">...</tr>
+
+<tr class="table-success">...</tr>
+
+<tr class="table-danger">...</tr>
+
+<tr class="table-warning">...</tr>
+
+<tr class="table-info">...</tr>
+
+<tr class="table-light">...</tr>
+
+<tr class="table-dark">...</tr>
+ On cells (`td` or `th`) 
+
+<tr>
+
+    <td class="table-primary">...</td>
+  
+    <td class="table-secondary">...</td>
+  
+    <td class="table-success">...</td>
+  
+    <td class="table-danger">...</td>
+  
+    <td class="table-warning">...</td>
+  
+    <td class="table-info">...</td>
+  
+    <td class="table-light">...</td>
+  
+    <td class="table-dark">...</td>
+  
+  </tr>
+  
+  
+    -->
+
+
+
+    <!-- las imagenes con texto
+        Al usar imágenes con texto relacionado se recomienda el uso de la etiqueta <figure>. La etiqueta <figcaption> contiene el texto de la imagen, pudiendo este ser alineado de igual manera que los elementos de texto.
+    <figure class="figure">
+
+    <img src="..." class="figure-img img-fluid rounded" alt="...">
+
+    <figcaption class="figure-caption">Figura 1.2</figcaption>
+
+</figure>
+    
+    -->
+    <!-- controles de formulario
+        Dimensionamiento:
+
+●       .form-control-sm (tamaño pequeño)
+
+●       .form-control (tamaño normal)
+
+●       .form-control-lg (tamaño grande)
+
+Habilitado:
+
+●       Atributo  disabled (Control deshabilitado)
+
+●       Atributo  readonly (Control sólo lectura)
+
+●       Atributos  disabled readonly (Control deshabilitado, sólo lectura)
+    -->
+    <input type="button" class="form-control"  value="">
+<!-- presentacion de formulario
+    <form>
+
+    <div class="mb-3">
+
+      <label for="idE" class="form-label">Correo</label>
+
+      <input type="email" class="form-control" id="idE" aria-describedby ="idEH">
+
+      <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+
+    </div>
+
+    <div class="mb-3">
+
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+
+      <input type="password" class="form-control" id="exampleInputPassword1">
+
+    </div>
+
+    <div class="mb-3 form-check">
+
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+      <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>
+-->
+<form>
+
+    <div class="mb-3">
+
+      <label for="idE" class="form-label">Correo</label>
+
+      <input type="email" class="form-control" id="idE" aria-describedby ="idEH">
+
+      <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+
+    </div>
+
+    <div class="mb-3">
+
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+
+      <input type="password" class="form-control" id="exampleInputPassword1">
+
+    </div>
+
+    <div class="mb-3 form-check">
+
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+      <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>
+
+<!--componentes alerta 
+  <div class="alert alert-primary" role="alert">
+
+      A simple primary alert—check it out!
+
+  </div>
+
+  <div class="alert alert-secondary" role="alert">
+
+    A simple secondary alert—check it out!
+
+  </div>
+
+  <div class="alert alert-success" role="alert">
+
+    A simple success alert—check it out!
+
+  </div>
+
+  <div class="alert alert-danger" role="alert">
+
+    A simple danger alert—check it out!
+
+  </div>
+
+  <div class="alert alert-warning" role="alert">
+
+    A simple warning alert—check it out!
+
+  </div>
+
+  <div class="alert alert-info" role="alert">
+
+    A simple info alert—check it out!
+
+  </div>
+
+  <div class="alert alert-light" role="alert">
+
+    A simple light alert—check it out!
+
+  </div>
+
+  <div class="alert alert-dark" role="alert">
+
+    A simple dark alert—check it out!
+
+  </div>
+-->
+<div class="alert alert-primary" role="alert">
+
+    A simple primary alert—check it out!
+
+</div>
+
+<div class="alert alert-secondary" role="alert">
+
+  A simple secondary alert—check it out!
+
+</div>
+
+<div class="alert alert-success" role="alert">
+
+  A simple success alert—check it out!
+
+</div>
+
+<div class="alert alert-danger" role="alert">
+
+  A simple danger alert—check it out!
+
+</div>
+
+<div class="alert alert-warning" role="alert">
+
+  A simple warning alert—check it out!
+
+</div>
+
+<div class="alert alert-info" role="alert">
+
+  A simple info alert—check it out!
+
+</div>
+
+<div class="alert alert-light" role="alert">
+
+  A simple light alert—check it out!
+
+</div>
+
+<div class="alert alert-dark" role="alert">
+
+  A simple dark alert—check it out!
+
+</div>
+<!--
+Botones
+Al igual que el resto de los controles, los botones incluyen el estilo predefinido. 
+
+Ejemplo:
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+<button type="button" class="btn btn-success">Success</button>
+
+<button type="button" class="btn btn-danger">Danger</button>
+
+<button type="button" class="btn btn-warning">Warning</button>
+
+<button type="button" class="btn btn-info">Info</button>
+
+<button type="button" class="btn btn-light">Light</button>
+
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+-->
+Botones
+Al igual que el resto de los controles, los botones incluyen el estilo predefinido. 
+
+Ejemplo:
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+<button type="button" class="btn btn-success">Success</button>
+
+<button type="button" class="btn btn-danger">Danger</button>
+
+<button type="button" class="btn btn-warning">Warning</button>
+
+<button type="button" class="btn btn-info">Info</button>
+
+<button type="button" class="btn btn-light">Light</button>
+
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+<!-- 
+    
+Barra de navegación
+Por último abordaremos el tema de la barra de navegación, elemento muy utilizado en el desarrollo de aplicaciones web. A continuación citamos las principales reglas para el uso de la barra de navegación.   
+
+●       Las barras de navegación requieren comenzar con la clase .navbar
+
+●       Las barras de navegación y su contenido son fluidos por defecto.
+
+●       Las barras de navegación responden de forma predeterminada, pero se pueden modificar fácilmente para cambiar su comportamiento.
+
+●       Garantice la accesibilidad mediante el uso de un elemento <nav> o, si usa un elemento más genérico como <div>, agregue a role="navigation" a cada barra de navegación.
+-->
+
+
+
+
+     <!-- Bootstrap JS -->
+
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+ <script src="dist/bootstrap/js/bootstrap.esm.min.js"></script> 
 </body>
 </html>
